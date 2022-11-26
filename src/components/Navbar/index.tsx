@@ -2,6 +2,7 @@ import { style } from "./style";
 import { auth } from "../../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Signin } from "../Signin";
+import { Logout } from "../Logout";
 
 export function Navbar() {
     const [user] = useAuthState(auth);
@@ -13,6 +14,7 @@ export function Navbar() {
             Chat App
       </h1>
       <Signin/>
+      <Logout/>
     </div>
   );
 }
