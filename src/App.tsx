@@ -2,6 +2,7 @@ import { Navbar } from "./components/Navbar";
 
 import {auth} from "./config/firebase";
 import {useAuthState} from "react-firebase-hooks/auth";
+import { Chat } from "./components/Chat";
 
 
 const style = {
@@ -18,6 +19,7 @@ function App() {
         {/* Navbar */}
         <Navbar />
         {/* Chat component */}
+        <Chat/>
       </section>
     </div>
   );
