@@ -13,8 +13,8 @@ export function Navbar() {
       <h1 className={style.heading}>
             Chat App
       </h1>
-      <Signin/>
-      <Logout/>
+      {user ? <Logout /> : <Signin />}
+
     </div>
   );
 }
